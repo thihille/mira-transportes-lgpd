@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="manager.cookies.css">
+    <title>Mira</title>
+</head>
+<body>
+
+    <h1 style="margin-left: 20px; color: #f9a418;">Modal LGPD - Mira Transportes</h1>
+    <button style="margin-left: 20px; border:none; background-color: black; color: white; padding: 10px 20px;" onclick="window.localStorage.removeItem('manager-cookies'); window.location.reload()">Limpar localstorage</button>
+
+    <h4 style="margin: 20px 0 0 20px;">Saída de parâmetros para o back-end:</h4>
+    <code id="preview-submit" style="display:block; margin-left: 20px; margin-top: 20px; padding: 20px; color: #555; width: 500px; background-color: #eee; border: 1px solid #ccc;">
+        Nada enviado até o momento
+    </code>
+
+    <script src="manager.cookies.js"></script>
+</body>
+</html>
