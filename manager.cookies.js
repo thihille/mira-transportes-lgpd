@@ -1,29 +1,46 @@
 window.onload = () => {
 
-    const request = new XMLHttpRequest();
-    let option1Checked = true;
-    let option2Checked = true;
+    const createPopupLgpd = () => {
+        const overlayPopupLgpd = document.createElement('div');
+        overlayPopupLgpd.setAttribute('id', 'overlay-popup-lgpd');
 
-    const createServiceAnalytics = () => {
+        const contentPopupLgpd = document.createElement('div');
+        contentPopupLgpd.setAttribute('id', 'content-popup-lgpd');
 
-        request.open("POST", "https://601c4c8e1a9c2200170607b8.mockapi.io/mira-transportes", true);
-        request.setRequestHeader("Content-type", "application/json");
-        request.onreadystatechange = function(e) {
-            
-            if (request.readyState == 2 && request.status == 201) {
-                console.log("Retorno do serviço realizado com sucesso!");
-                console.log({
-                    analyticCookies: option1Checked,
-                    requiredCookies: option2Checked
-                });
-            }
-        }
+        const textPopup = `
+            <div class="content">
+                <button class="__btn-close-popup-lgpd">
+                    X
+                </button>
+                <h1>
+                    A Lei Geral de Proteção de Dados – LGPD
+                </h1>
+                <p>
+                    A Lei Geral de Proteção de Dados – LGPD (Lei nº 13.709/2018), é a lei brasileira que tem como principal objetivo garantir transparência e regulamentação no tratamento de dados pessoais.
+                </p>
+                <p>
+                Diante disso, nós do GRUPO MIRA, adequamos nossos processos às diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD), seguindo as devidas premissas para atingir o compliance com as melhores práticas de mercado. Nosso objetivo primordial é ter a transparência de que os dados pessoais serão tratados com respeito e em cumprimento às normas legais.
+                </p>
+                <p>
+                    É um novo passo que estamos dando, a caminho da evolução e da transformação digital, para que tudo ocorra com o máximo de zelo e respeito aos nossos clientes, colaboradores, fornecedores e demais envolvidos.
+                </p>
+                <p>
+                    O GRUPO MIRA reforça seu compromisso com essa transformação, dando seu apoio irrestrito e incondicional ao direito à privacidade e proteção dos dados dos titulares, aliados à transparência e regulamentação no tratamento destes.
+                </p>
+                <p>
+                    Qualquer dúvida, entre em contato com nosso Comitê de Privacidade de Dados, pelo e-mail abaixo:<br><a href="mailto:lgpd@mira.com.br" target="_blank">lgpd@mira.com.br</a>
+                </p>
+            </div>
+        `;
+
+        contentPopupLgpd.innerHTML = textPopup;
+        overlayPopupLgpd.appendChild(contentPopupLgpd);
+        document.body.appendChild(overlayPopupLgpd);
     }
-
     
     const createContainerPrivacy = () => {
         const containerPrivacyOptions = document.createElement('div');
-            containerPrivacyOptions.setAttribute('id','container-manager-cookies');
+            containerPrivacyOptions.setAttribute('id','popup-manager-cookies');
 
         const dataContainer = `
             <div class="container-manager-paragraph">
@@ -32,8 +49,8 @@ window.onload = () => {
                 </p>
             </div>
             <div class="container-manager-actions">
-                <button class="__btn-more-options">Minhas opções</button>
-                <button class="__btn-accept">Aceitar todos</button>
+                <button class="__btn-more-options">Minha opção</button>
+                <button class="__btn-accept">Aceitar cookies</button>
             </div>
         `;
 
@@ -64,33 +81,17 @@ window.onload = () => {
             <div class="container-options-actions">
                 <ul>
                     <li class="option-1">
-                        <div class="label-option">
-                            <span></span> Analíticos    
-                        </div>
-                        <div class="action-option">
-                            <div class="name-checked-1">Ativado</div> <span id="checked-1" class="checked"></span>
+                        <div class="label-option actived">
+                            <span></span> Necessários    
                         </div>
                     </li>
                     <li class="text-option-1">
-                        <p>
-                            Os cookies analíticos coletam informações sobre a utilização dos Sites, permitindo-nos aperfeiçoar o seu funcionamento. Os cookies analíticos, por exemplo, mostram-nos quais são as páginas mais visitadas nos Sites, ajudam-nos a registar quaisquer dificuldades que os usuários sintam na navegação nos Sites, e mostram-nos se a nossa publicidade é eficaz ou não.
-                        </p>
-                    </li>
-                    <li class="option-2">
-                        <div class="label-option">
-                            <span></span> Necessários    
-                        </div>
-                        <div class="action-option">
-                        <div class="name-checked-2">Ativado</div> <span id="checked-2" class="checked"></span>
-                        </div>
-                    </li>
-                    <li class="text-option-2">
                         <p>
                             Os cookies necessários são absolutamente essenciais para o funcionamento adequado do site. Esta categoria inclui apenas cookies que garantem funcionalidades básicas e recursos de segurança do site. Esses cookies não armazenam nenhuma informação pessoal.
                         </p>
                     </li>
                 </ul>
-                <button class="__btn-accept __btn-accept-options">Salvar e aceitar</button>
+                <button class="__btn-accept __btn-accept-options">Aceitar cookies</button>
             </div>
         `;
 
@@ -110,50 +111,42 @@ window.onload = () => {
     }
 
     const sendAndRemoveData = () => {
-        let objeto = {
-            analyticCookies: option1Checked,
-            requiredCookies: option2Checked
-        }
-        request.send(JSON.stringify(objeto));
 
         window.localStorage.setItem('manager-cookies', true);
-
-        const removeElContainer = document.querySelector('#container-manager-cookies');
+        const removeElContainer = document.querySelector('#popup-manager-cookies');
             removeElContainer.parentElement.removeChild(removeElContainer);
 
         const removeElModal = document.querySelector('#modal-privacy-options');
             removeElModal.parentElement.removeChild(removeElModal);
-
-        //REMOVER ESTA LINHA
-        document.querySelector("#preview-submit").innerHTML = `
-            <p>{</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;analyticCookies: ${option1Checked}</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requiredCookies: ${option2Checked}</p>
-            <p>}</p>
-        `
     }
 
     const closeModal = () => {
         const modal = document.querySelector("#modal-privacy-options");
             modal.classList.remove('showing-modal');
     }
+    
+    const closePopup = () => {
+        const removePopup = document.querySelector('#overlay-popup-lgpd');
+        removePopup.parentElement.removeChild(removePopup);
+
+        window.localStorage.setItem('notice-lgpd-popup', true);
+    }
 
     if(!window.localStorage.getItem('manager-cookies')){
         
         createContainerPrivacy();
         createModalPrivacy();
-        createServiceAnalytics();
 
         document.querySelector('.__btn-more-options').addEventListener('click', () => {
             showModalPrivacy();
         });
     
         document.querySelector('#__btn-policy-privacy').addEventListener('click', () => {
-            alert('Link de Acesso a Política de cookies');
+            window.location.href = "politicas-de-privacidade";
         });
     
         document.querySelector('#__btn-policy-cookies').addEventListener('click', () => {
-            alert('Link de Acesso a Política de cookies');
+            window.location.href = "politicas-de-cookies";
         });
     
         document.querySelector('.__btn-accept').addEventListener('click', () => {
@@ -167,58 +160,23 @@ window.onload = () => {
             }, 300);
         });
     
-        document.querySelector('.option-1 .label-option').addEventListener('click', (e) => {
-            if(e.currentTarget.classList.contains('actived')){
-                e.currentTarget.classList.remove('actived');
-                document.querySelector('.text-option-1').style.display = "none";
-            }else{
-                e.currentTarget.classList.add('actived');
-                document.querySelector('.text-option-1').style.display = "block";
-                document.querySelector('.text-option-2').style.display = "none";
-                document.querySelector('.option-2 .label-option').classList.remove('actived');
-            }
-        });
-    
-        document.querySelector('.option-2 .label-option').addEventListener('click', (e) => {
-            if(e.currentTarget.classList.contains('actived')){
-                e.currentTarget.classList.remove('actived');
-                document.querySelector('.text-option-2').style.display = "none";
-            }else{
-                e.currentTarget.classList.add('actived');
-                document.querySelector('.text-option-1').style.display = "none";
-                document.querySelector('.option-1 .label-option').classList.remove('actived');
-                document.querySelector('.text-option-2').style.display = "block";
-            }
-        });
-    
-        document.querySelectorAll('.action-option span').forEach(element => {
-            element.addEventListener('click', (e) => {
-                if(e.currentTarget.classList.contains('checked')){
-                    e.currentTarget.classList.remove('checked');
-                    if(e.currentTarget.id === "checked-1"){
-                        option1Checked = false;
-                        document.querySelector('.name-checked-1').textContent = "Desativado";
-                    }else if(e.currentTarget.id === "checked-2"){
-                        option2Checked = false;
-                        document.querySelector('.name-checked-2').textContent = "Desativado";
-                    }
-                }else{
-                    if(e.currentTarget.id === "checked-1"){
-                        option1Checked = true;
-                        document.querySelector('.name-checked-1').textContent = "Ativado";
-                    }else if(e.currentTarget.id === "checked-2"){
-                        option2Checked = true;
-                        document.querySelector('.name-checked-2').textContent = "Ativado";
-                    }
-                    e.currentTarget.classList.add('checked');
-                }
-            });
-        });
-    
         document.querySelector('.__btn-close-modal').addEventListener('click', () => {
             closeModal();
         });
     }
 
+    if(!window.localStorage.getItem('notice-lgpd-popup')){
+
+        createPopupLgpd();
+
+        setTimeout(() => {
+            document.querySelector("#overlay-popup-lgpd").classList.add('showing');
+            document.querySelector("#content-popup-lgpd").classList.add('showing');
+        }, 500);
+    
+        document.querySelector('.__btn-close-popup-lgpd').addEventListener('click', () => {
+            closePopup();
+        });
+    }
     
 }
