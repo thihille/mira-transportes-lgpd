@@ -152,15 +152,7 @@ window.onload = () => {
         document.querySelector('.__btn-more-options').addEventListener('click', () => {
             showModalPrivacy();
         });
-    
-        document.querySelector('#__btn-policy-privacy').addEventListener('click', () => {
-            window.location.href = "politicas-de-privacidade";
-        });
-    
-        document.querySelector('#__btn-policy-cookies').addEventListener('click', () => {
-            window.location.href = "politicas-de-cookies";
-        });
-    
+        
         document.querySelector('.__btn-accept').addEventListener('click', () => {
             sendAndRemoveData();
         });
