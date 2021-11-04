@@ -16,19 +16,19 @@ window.onload = () => {
                     A Lei Geral de Proteção de Dados – LGPD
                 </h1>
                 <p>
-                    A Lei Geral de Proteção de Dados – LGPD (Lei nº 13.709/2018), é a lei brasileira que tem como principal objetivo garantir transparência e regulamentação no tratamento de dados pessoais.
+                    No GRUPO MIRA TRANSPORTES privacidade, respeito e segurança dos dados pessoais de nossos usuários e clientes são prioridades e por esta razão, estamos comprometidos na adoção de medidas para proteger as informações que você fornece para navegar em nosso site.
                 </p>
                 <p>
-                Diante disso, nós do GRUPO MIRA, adequamos nossos processos às diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD), seguindo as devidas premissas para atingir o compliance com as melhores práticas de mercado. Nosso objetivo primordial é ter a transparência de que os dados pessoais serão tratados com respeito e em cumprimento às normas legais.
+                    Para isso, instituímos nossa <strong>“Política de Privacidade”</strong>, onde você pode conferir como coletamos, tratamos e armazenamos os seus dados pessoais, garantindo assim, transparência, sigilo e devido cumprimento a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018-LGPD). 
                 </p>
                 <p>
-                    É um novo passo que estamos dando, a caminho da evolução e da transformação digital, para que tudo ocorra com o máximo de zelo e respeito aos nossos clientes, colaboradores, fornecedores e demais envolvidos.
+                    Assim, ao clicar em “Aceito” você concorda com nossa política e a devida utilização de seus dados pessoais em nosso site, portal, software ou serviços.
                 </p>
                 <p>
-                    O GRUPO MIRA reforça seu compromisso com essa transformação, dando seu apoio irrestrito e incondicional ao direito à privacidade e proteção dos dados dos titulares, aliados à transparência e regulamentação no tratamento destes.
+                    Nossa <strong>“Política de Privacidade”</strong> poderá ser atualizada a qualquer tempo, tratando-se de modificações atreladas ao compartilhamento, finalidade e duração do tratamento de seus dados pessoais, reforçando assim, nosso compromisso e apoio irrestrito ao direito à sua privacidade e proteção de seus dados.
                 </p>
                 <p>
-                    Qualquer dúvida, entre em contato com nosso Comitê de Privacidade de Dados, pelo e-mail abaixo:<br><a href="mailto:lgpd@mira.com.br" target="_blank">lgpd@mira.com.br</a>
+                    Caso tenha dúvidas ou deseje exercer qualquer direito de titular de dados pessoais, entre em contato com nosso Comitê de Privacidade de Dados, através do e.mail: <a href="mailto:lgpd@mira.com.br" target="_blank">lgpd@mira.com.br</a>
                 </p>
             </div>
         `;
@@ -177,5 +177,6 @@ window.onload = () => {
         document.querySelector('.__btn-close-popup-lgpd').addEventListener('click', () => {
             closePopup();
         });
-    }   
+    }
+    
 }
