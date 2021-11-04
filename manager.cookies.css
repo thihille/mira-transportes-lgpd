@@ -85,6 +85,12 @@ body {
     z-index: 9999;
 }
 
+#popup-manager-cookies .container-manager-paragraph p {
+    font-size: .7rem;
+    margin: 0;
+    padding: 3px 0;
+}
+
 #popup-manager-cookies .container-manager-actions {
     display: flex;
     align-items: center;
@@ -270,7 +276,7 @@ body {
     }
 
     #popup-manager-cookies .container-manager-paragraph p, #popup-manager-cookies .container-options-paragraph p {
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
     #popup-manager-cookies .container-manager-actions {
