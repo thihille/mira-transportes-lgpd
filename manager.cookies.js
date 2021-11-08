@@ -87,14 +87,17 @@ window.onload = () => {
                     Opções de Privacidade de dados
                 </h1>
                 <p>
-                    Este site usa cookies para melhorar sua experiência enquanto você navega pelo site. Destes, os cookies que são categorizados como necessários são armazenados no seu navegador, pois são essenciais para o funcionamento das funcionalidades básicas do site. Também usamos cookies de terceiros que nos ajudam a analisar e entender como você usa este site. Esses cookies serão armazenados em seu navegador apenas com o seu consentimento. Você também tem a opção de cancelar esses cookies. Mas desativar alguns desses cookies pode afetar sua experiência de navegação.
+                    Nós queremos que você tenha a melhor experiência de navegação em nosso site e para isso, utilizamos cookies com a finalidade de aprimoramento e comprometimento com sua privacidade e segurança, de acordo com a Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018). 
+                </p>
+                <p>
+                    Ao clicar em <strong>“aceitar”</strong> você concorda com o uso que fazemos dos cookies e consente com o acesso, armazenamento e uso de seus dados pessoais de acordo com a nossa Política de Privacidade. Conheça abaixo o tipo de cookie utilizado pelo nosso site.
                 </p>
             </div>
             <div class="container-options-actions">
                 <ul>
                     <li class="option-1">
                         <div class="label-option actived">
-                            <span></span> Necessários    
+                            <span></span> Coockie Necessários
                         </div>
                     </li>
                     <li class="text-option-1">
