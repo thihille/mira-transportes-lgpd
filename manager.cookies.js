@@ -61,7 +61,7 @@ window.onload = () => {
                 </p>
             </div>
             <div class="container-manager-actions">
-                <button class="__btn-more-options">Minha opção</button>
+                <button class="__btn-more-options">Opção de Cookie</button>
                 <button class="__btn-accept">Aceito</button>
             </div>
         `;
