@@ -16,16 +16,19 @@ window.onload = () => {
                     A Lei Geral de Proteção de Dados – LGPD
                 </h1>
                 <p>
-                    A Lei Geral de Proteção de Dados – LGPD (Lei nº 13.709/2018), é a lei brasileira que tem como principal objetivo garantir transparência e regulamentação no tratamento de dados pessoais.
+                    A Lei Geral de Proteção de Dados - LGPD (Lei nº 13.709/2018) - é a lei brasileira que tem como principal objetivo garantir transparência e regulamentação no tratamento de dados pessoais.
                 </p>
                 <p>
-                    Diante disso, nós do GRUPO MIRA, adequamos nossos processos às diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD), seguindo as devidas premissas para atingir o compliance com as melhores práticas de mercado. Nosso objetivo primordial é ter a transparência de que os dados pessoais serão tratados com respeito e em cumprimento às normas legais.
+                    Diante disso, nós do Grupo MIRA, adequamos nossos processos às diretrizes da Lei Geral de Proteção de Dados Pessoais (LGPD), seguindo as devidas premissas para atingir o compliance com as melhores práticas de mercado.
                 </p>
                 <p>
-                    É um novo passo que estamos dando, a caminho da evolução e da transformação digital, para que tudo ocorra com o máximo de zelo e respeito aos nossos clientes, colaboradores, fornecedores e demais envolvidos.
+                    Nosso objetivo primordial é ter a transparência de que os dados pessoais serão tratados com respeito e em cumprimento às normas legais.
                 </p>
                 <p>
-                    O GRUPO MIRA reforça seu compromisso com essa transformação, dando seu apoio irrestrito e incondicional ao direito à privacidade e proteção dos dados dos titulares, aliados à transparência e regulamentação no tratamento destes.
+                    É um novo passo a caminho da evolução e da transformação digital, para que tudo ocorra com o máximo de zelo e respeito aos nossos clientes, colaboradores, fornecedores e demais envolvidos.
+                </p>
+                <p>
+                    O Grupo MIRA reforça seu compromisso com essa transformação, dando seu apoio irrestrito e incondicional ao direito à privacidade e proteção dos dados dos titulares, aliados à transparência e regulamentação no tratamento destes.
                 </p>
                 <p>
                     Qualquer dúvida, entre em contato com nosso Comitê de Privacidade de Dados, pelo e-mail abaixo:<br><a href="mailto:lgpd@mira.com.br" target="_blank">lgpd@mira.com.br</a>
