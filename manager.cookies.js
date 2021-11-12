@@ -150,30 +150,30 @@ window.onload = () => {
         window.localStorage.setItem('notice-lgpd-popup', true);
     }
 
-    if(!window.localStorage.getItem('manager-cookies')){
+    // if(!window.localStorage.getItem('manager-cookies')){
         
-        createContainerPrivacy();
-        createModalPrivacy();
+    //     createContainerPrivacy();
+    //     createModalPrivacy();
 
-        document.querySelector('.__btn-more-options').addEventListener('click', () => {
-            showModalPrivacy();
-        });
+    //     document.querySelector('.__btn-more-options').addEventListener('click', () => {
+    //         showModalPrivacy();
+    //     });
         
-        document.querySelector('.__btn-accept').addEventListener('click', () => {
-            sendAndRemoveData();
-        });
+    //     document.querySelector('.__btn-accept').addEventListener('click', () => {
+    //         sendAndRemoveData();
+    //     });
 
-        document.querySelector('.__btn-accept-options').addEventListener('click', () => {
-            closeModal();
-            setTimeout(() => {
-                sendAndRemoveData();
-            }, 300);
-        });
+    //     document.querySelector('.__btn-accept-options').addEventListener('click', () => {
+    //         closeModal();
+    //         setTimeout(() => {
+    //             sendAndRemoveData();
+    //         }, 300);
+    //     });
     
-        document.querySelector('.__btn-close-modal').addEventListener('click', () => {
-            closeModal();
-        });
-    }
+    //     document.querySelector('.__btn-close-modal').addEventListener('click', () => {
+    //         closeModal();
+    //     });
+    // }
 
     if(!window.localStorage.getItem('notice-lgpd-popup')){
 
