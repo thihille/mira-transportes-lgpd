@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page-politica-privacidade {
+    display: block;
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+#page-politica-privacidade h1 {
+    color: #333;
+}
+
+#page-politica-privacidade h2 {
+    color: #f9a418;
+}
+
+#page-politica-privacidade p {
+    color: #333;
+    font-size: 1rem;
+}
+
+#page-politica-privacidade p strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
+#page-politica-privacidade table {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#page-politica-privacidade table thead th {
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+#page-politica-privacidade table tbody td {
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+#page-politica-privacidade ul.list-roman {
+    list-style:upper-roman;
+}
+#page-politica-privacidade ul li {
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+#page-politica-privacidade ul li strong {
+    font-weight: 700;
+    font-style: italic;
+}
