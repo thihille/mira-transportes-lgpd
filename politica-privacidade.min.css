@@ -1,0 +1,52 @@
+body > main#page-politica-privacidade {
+    position: relative;
+    width: 80%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+body > main#page-politica-privacidade h1 {
+    color: #f9a418;
+    font-size: 2.375rem;
+    font-weight: 700;
+    width: 100%;
+    padding-left: 3.125rem;
+    z-index: 1;
+}
+
+body > main#page-politica-privacidade p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    word-spacing: .125rem;
+}
+
+body > main#page-politica-privacidade p strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
+body > main#page-politica-privacidade table {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+body > main#page-politica-privacidade table thead th {
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+body > main#page-politica-privacidade table tbody td {
+    padding: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+body > main#page-politica-privacidade ul.list-roman {
+    list-style:upper-roman;
+}
+body > main#page-politica-privacidade ul li {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    word-spacing: .125rem;
+}
+body > main#page-politica-privacidade ul li strong {
+    font-weight: 700;
+    font-style: italic;
+}
